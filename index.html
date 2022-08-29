@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,97 +8,1244 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <script defer src="js/index.js"> </script>
 </head>
+
 <body>
-  
-  <nav class="bg-red-100 font-semibold">
-    
-    <div class="flex items-center justify-between container mx-auto px-5 py-2">
-      <a href="">
-        <img class="h-14" src="/assets/logo-test.png" alt="">
-      </a>
-      
-        <ul class="dropdown ml-auto flex">
-          <li class="hover:bg-red-300 mx-1 px-6 py-2 bg-red-600 text-white rounded">
-            <a href=""> Inicio </a>
-          </li>
-            <li class="dropdown hover:bg-red-300 mx-1 relative group rounded">
-                <a class="px-6 py-2" href=""> Órdenes </a>
-                <ul class="dropdown-content absolute bg-red-300 top-10 left-0 hidden group-hover:block w-60">
-                    <li class="dropdown hover:bg-red-400">
-                      <a class="px-6 py-2" href=""> Nueva orden </a>
-                        <ul class="dropdown-content absolute hidden top-0 left-full">
-                          <li> 
-                            <a class="py-2 hover:bg-red-400 bg-red-300 px-6 py-2 w-56" href="">
-                              Orden comercial 
-                            </a>
-                          </li>
-                          <li> 
-                            <a class="py-2 hover:bg-red-400 bg-red-300 px-6 py-2 w-56" href="">
-                              Orden ventanilla 
-                            </a>
-                          </li>
-                        </ul>
-                    </li>
-                    <li>
-                      <a class="px-6 py-2 hover:bg-red-400 rounded" href=""> Localizador </a>
-                    </li>
-                    <li>
-                      <a class="px-6 py-2 hover:bg-red-400 rounded" href=""> Cociliación de publicidad </a>
-                    </li>
-                    <li>
-                      <a class="px-6 py-2 hover:bg-red-400 rounded" href=""> Gestión de espacios </a>
-                    </li>
-                    <li>
-                      <a class="px-6 py-2 hover:bg-red-400 rounded" href=""> Ocupación de planillo </a>
-                    </li>
-                    <li>
-                      <a class="px-6 py-2 hover:bg-red-400 rounded" href=""> Revisión de la producción </a>
-                    </li>
-                    <li>
-                      <a class="px-6 py-2 hover:bg-red-400 rounded" href=""> Espacio fijo libre </a>
-                    </li> 
-                </ul>
-            </li>
-        
-            <li>
-                <a class="hover:bg-red-300 mx-1 px-6 py-2 rounded" href=""> Facturación </a>
-            </li>
-            <li>
-              <a class="hover:bg-red-300 mx-1 px-6 py-2 rounded" href=""> Intervinientes </a>
-            </li>
-            <li>
-                <a class="hover:bg-red-300 mx-1 px-6 py-2 rounded" href=""> Utilidades </a>
-            </li>
-            <li>
-              <a class="hover:bg-red-300 mx-1 px-6 py-2 rounded" href=""> Orden </a>
-            </li>
-            <li>
-                <a class="hover:bg-red-300 mx-1 px-6 py-2 rounded" href=""> Módulos </a>
-            </li>
-            <li>
-              <a class="hover:bg-red-300 mx-1 px-6 py-2 rounded" href=""> Ver </a>
-            </li>
-            <li>
-              <a class="hover:bg-red-300 mx-1 px-6 py-2 rounded" href=""> Ayuda </a>
-            </li>
-          
-        </ul>
+
+
+  <nav class="font-semibold border-b border-inherit">
+
+    <div class="flex justify-between items-center container mx-auto max-w-screen-lg px-4 py-4">
+      <!-- <div class="flex items-center justify-center max-w-screen-lg mx-auto "> -->
+      <div class="flex justify-between items-center py-2">
+        <img src="/assets/logo-pautas.svg" class="h-14 px-2" alt="">
       </div>
-    </nav>
+
+
+      <ul class="dropdown flex justify-between md:justify-evently flex-wrap">
+
+        <li class="dropdown hover:bg-blue-100 mx-1 relative group rounded">
+
+          <a class="px-4 py-2" href=""> Órdenes </a>
+          <ul
+            class="dropdown-content absolute bg-blue-100 top-10 left-0 hidden group-hover:block w-60 border-t-2 border-white rounded">
+
+            <li class="dropdown">
+              <a class="px-4 py-2 hover:bg-blue-50 rounded" href=""> Nueva orden </a>
+              <ul
+                class="dropdown-content absolute bg-blue-100 hidden top-0 left-full w-56 rounded border-l-2 border-white">
+                <li class="dropdown">
+                  <a class="py-2 hover:bg-blue-50 bg-blue-100 px-4 py-2 rounded" href="">
+                    Orden comercial
+                  </a>
+                </li>
+                <li class="dropdown">
+                  <a class="py-2 hover:bg-blue-50 bg-blue-100 px-4 py-2 rounded" href="">
+                    Orden ventanilla
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="px-4 py-2 hover:bg-blue-50 rounded" href=""> Localizador </a>
+            </li>
+            <li>
+              <a class="px-4 py-2 hover:bg-blue-50 rounded" href=""> Conciliación de publicidad </a>
+            </li>
+            <li>
+              <a class="px-4 py-2 hover:bg-blue-50 rounded" href=""> Gestión de espacios </a>
+            </li>
+            <li>
+              <a class="px-4 py-2 hover:bg-blue-50 rounded" href=""> Ocupación de planillo </a>
+            </li>
+            <li>
+              <a class="px-4 py-2 hover:bg-blue-50 rounded" href=""> Revisión de la producción </a>
+            </li>
+            <li>
+              <a class="px-4 py-2 hover:bg-blue-50 rounded" href=""> Espacio fijo libre </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a class="hover:bg-blue-100 mx-1 px-4 py-2 rounded" href=""> Facturación </a>
+        </li>
+        <li>
+          <a class="hover:bg-blue-100 mx-1 px-4 py-2 rounded" href=""> Intervinientes </a>
+        </li>
+        <li>
+          <a class="hover:bg-blue-100 mx-1 px-4 py-2 rounded" href=""> Utilidades </a>
+        </li>
+        <li>
+          <a class="hover:bg-blue-100 mx-1 px-4 py-2 rounded" href=""> Orden </a>
+        </li>
+        <li>
+          <a class="hover:bg-blue-100 mx-1 px-4 py-2 rounded" href=""> Módulos </a>
+        </li>
+
+      </ul>
+
+      <div class="flex justify-between items-center border rounded-full px-2 py-2">
+        <h1 class="px-4">
+          Ana Perez
+        </h1>
+        <img class="w-10 h-10 rounded-full object-cover" src="/assets/profile.jpg" alt="">
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto max-w-screen-lg px-6">
+
+    <!-- TITULO PRINCIPAL  -->
+    <h1 class="font-bold text-xl py-4 border-b border-inherit">
+      Nueva orden
+    </h1>
+
+
+    <h1 class="font-bold py-4">
+      Datos generales
+    </h1>
+
+
+    <!-- FORM FIRST -->
+    <div class="grid grid-cols-3 pb-4 gap-4 border-b border-inherit">
+      <div class="col-span-2">
+
+        <div class="border rounded">
+          <section class="bg-blue-200 py-4 p-4">
+            <form class="w-full">
+              <div class="flex justify-center">
+                <div class="w-full flex flex-col">
+                  <label class="text-gray-500 font-bold  text-xs">
+                    Cliente
+                  </label>
+
+                  <div class="grid grid-cols-10 gap-2 items-center">
+
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                    <div class="col-span-8">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded  w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+
+                  </div>
+
+                  <div class="grid grid-cols-2 gap-2 items-center">
+
+                    <div>
+                      <label class="text-gray-500 font-bold  text-xs">
+                        Clase
+                      </label>
+
+                      <div class="col-span-2">
+                        <select class="form-select  
+                                        block
+                                        w-full
+                                        px-3
+                                        py-1.5
+                                        text-base
+                                        font-normal
+                                        text-gray-700
+                                        bg-white bg-clip-padding bg-no-repeat
+                                        border border-solid border-gray-300
+                                        rounded
+                                        transition
+                                        ease-in-out
+                                        m-0
+                                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                          aria-label="Default select example">
+                          <option selected>Seleccione clase</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="text-gray-500 font-bold text-xs">
+                        Situación
+                      </label>
+
+                      <div class="col-span-2">
+                        <select class="form-select  
+                                        block
+                                        w-full
+                                        px-3
+                                        py-1.5
+                                        text-base
+                                        font-normal
+                                        text-gray-700
+                                        bg-white bg-clip-padding bg-no-repeat
+                                        border border-solid border-gray-300
+                                        rounded
+                                        transition
+                                        ease-in-out
+                                        m-0
+                                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                          aria-label="Default select example">
+                          <option selected>Seleccione situación</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="grid gap-2 items-center">
+
+
+                    <div>
+                      <label class="text-gray-500 font-bold text-xs">
+                        Referencia
+                      </label>
+
+                      <div class="col-span-2">
+                        <input
+                          class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                          type="text">
+                      </div>
+                    </div>
+
+                    <div class="w-full flex flex-col">
+                      <label class="text-gray-500 font-bold  text-xs">
+                        Agencia
+                      </label>
+
+                      <div class="grid grid-cols-10 gap-2 items-center">
+
+                        <div class="col-span-2">
+                          <input
+                            class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                            type="text">
+                        </div>
+                        <div class="col-span-8">
+                          <input
+                            class="bg-white appearance-none border border-solid border-gray-300 rounded  w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                            type="text">
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="w-full flex flex-col">
+                      <label class="text-gray-500 font-bold  text-xs">
+                        Promotor
+                      </label>
+
+                      <div class="grid grid-cols-10 gap-2 items-center">
+
+                        <div class="col-span-2">
+                          <input
+                            class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                            type="text">
+                        </div>
+                        <div class="col-span-8">
+                          <input
+                            class="bg-white appearance-none border border-solid border-gray-300 rounded  w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                            type="text">
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="w-full flex flex-col">
+                      <label class="text-gray-500 font-bold  text-xs">
+                        Anunciante
+                      </label>
+
+                      <div class="grid grid-cols-10 gap-2 items-center">
+
+                        <div class="col-span-2">
+                          <input
+                            class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                            type="text">
+                        </div>
+                        <div class="col-span-8">
+                          <input
+                            class="bg-white appearance-none border border-solid border-gray-300 rounded  w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                            type="text">
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+            </form>
+          </section>
+
+        </div>
+
+      </div>
+
+      <!-- TABLA DE PRECIOS -->
+      <div>
+        <table class="table-auto w-full">
+
+          <thead class="bg-blue-200 border-b-2 border-gray-200">
+            <tr class="text-sm font-semibold">
+              <th class="py-2 px-2 text-left rounded-tl"> Detalle </th>
+              <th class="py-2 px-2 text-right rounded-tr"> Precio </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white">
+              <td class="px-2"> Precio de tarifa </td>
+              <td class="px-2 text-right"> 564.00 </td>
+            </tr>
+            <tr class="bg-blue-50">
+              <td class="px-2"> Recargo </td>
+              <td class="px-2 text-right"> 0.00 </td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-2"> Descuento </td>
+              <td class="px-2 text-right"> 0.00 </td>
+            </tr>
+            <tr class="bg-blue-50">
+              <td class="px-2"> Sub-total </td>
+              <td class="px-2 text-right"> 564.00 </td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-2"> Base imponible </td>
+              <td class="px-2 text-right"> 564.00 </td>
+            </tr>
+            <tr class="bg-blue-50">
+              <td class="px-2"> Impuestos 7% </td>
+              <td class="px-2 text-right"> 39.48 </td>
+            </tr>
+
+          <tfoot class="bg-blue-200">
+            <tr class="text-sm font-semibold">
+              <td class="py-2 px-2 text-left rounded-bl"> TOTAL </th>
+              <td class="py-2 px-2 text-right rounded-br"> 9.202,00 </th>
+            </tr>
+          </tfoot>
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+
+
+    <!-- TABS -->
+    <div class="flex border-inherit py-4">
+      <!-- FORM ORDEN -->
+      <div class="flex flex-col w-full">
+
+        <!-- NAV TABS -->
+        <nav>
+          <ul class="inline-flex flex-nowrap whitespace-nowrap bg-blue-50 rounded-t">
+            <li id="select-tab"
+              class="border-x border-t w-full rounded-t text-center px-4 p-2 cursor-pointer hover:bg-blue-200 bg-blue-200">
+              Generales </li>
+
+            <li id="select-tab" class="border-b w-full rounded-t text-center px-4 p-2 cursor-pointer hover:bg-blue-200">
+              Clasificados </li>
+
+        </nav>
+
+        <!-- CONTAINER TABS SECTIONS -->
+        <div class="border-x border-b rounded-b">
+
+          <section id="select-content" class="bg-blue-200 py-4 p-4 hidden">
+            <form class="grid grid-cols-2 gap-4">
+              <!-- FORM LEFT -->
+              <div class="w-full flex flex-col">
+                <div>
+
+                  <label class="text-gray-500 font-bold  text-xs">
+                    Publicación
+                  </label>
+
+                  <div class="grid grid-cols-8 gap-2 items-center">
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                    <div class="col-span-6">
+                      <select class="form-select  
+                        block
+                        w-full
+                        px-3
+                        py-1.5
+                        text-base
+                        font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding bg-no-repeat
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione publicación</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="text-gray-500 font-bold  text-xs">
+                    Edición
+                  </label>
+
+                  <div class="grid grid-cols-8 gap-2 items-center">
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                    <div class="col-span-6">
+                      <select class="form-select  
+                          block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding bg-no-repeat
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione edición</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div>
+                  <label class="text-gray-500 font-bold  text-xs">
+                    Producto
+                  </label>
+
+                  <div class="grid grid-cols-8 gap-2 items-center">
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                    <div class="col-span-6">
+                      <select class="form-select  
+                          block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding bg-no-repeat
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione Producto </option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="grid gap-2 items-center">
+
+                  <div>
+                    <label class="text-gray-500 font-bold text-xs">
+                      Título
+                    </label>
+
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                  </div>
+
+                  <div class="w-full flex flex-col">
+
+                    <div class="grid grid-cols-10 gap-2 items-end">
+
+                      <div class="col-span-3">
+                        <label class="text-gray-500 font-bold  text-xs">
+                          Medidas
+                        </label>
+                        <input
+                          class="bg-white appearance-none rounded w-full py-1.5 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                          type="text" value="Col. * Pulg" readonly>
+                      </div>
+                      <div class="col-span-2">
+                        <input
+                          class="bg-white appearance-none rounded  w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                          type="text" value="3" readonly>
+                      </div>
+                      <div class="col-span-2">
+                        <input
+                          class="bg-white appearance-none rounded  w-full py-1.5 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                          type="text" value="5.50" readonly>
+                      </div>
+
+                      <div class="col-span-3">
+                        <label class="text-gray-500 font-bold  text-xs">
+                          Impacto
+                        </label>
+                        <input
+                          class="bg-white appearance-none rounded  w-full py-1.5 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                          type="text" value="0" readonly>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+
+
+                </div>
+              </div>
+
+
+              <!-- FORM RIGTH  -->
+              <div class="w-full flex flex-col">
+
+                <div>
+                  <label class="text-gray-500 font-bold text-xs">
+                    Tarifa actual
+                  </label>
+
+                  <div class="col-span-2">
+                    <input
+                      class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                      type="text">
+                  </div>
+                </div>
+
+
+                <div class="grid grid-cols-2 gap-2 items-center">
+
+                  <div>
+                    <label class="text-gray-500 font-bold  text-xs">
+                      Tipo original
+                    </label>
+
+                    <div class="col-span-2">
+                      <select class="form-select
+                                    block
+                                    w-full
+                                    px-3
+                                    py-1.5
+                                    text-base
+                                    font-normal
+                                    text-gray-700
+                                    bg-white bg-clip-padding bg-no-repeat
+                                    border border-solid border-gray-300
+                                    rounded
+                                    transition
+                                    ease-in-out
+                                    m-0
+                                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione tipo</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="text-gray-500 font-bold text-xs">
+                      Original
+                    </label>
+
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 items-center">
+
+                  <div>
+                    <label class="text-gray-500 font-bold  text-xs">
+                      Color
+                    </label>
+
+                    <div class="col-span-2">
+                      <select class="form-select
+                                    block
+                                    w-full
+                                    px-3
+                                    py-1.5
+                                    text-base
+                                    font-normal
+                                    text-gray-700
+                                    bg-white bg-clip-padding bg-no-repeat
+                                    border border-solid border-gray-300
+                                    rounded
+                                    transition
+                                    ease-in-out
+                                    m-0
+                                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione color</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="text-gray-500 font-bold text-xs">
+                      Colocación
+                    </label>
+
+                    <div class="col-span-2">
+                      <select class="form-select 
+                                    block
+                                    w-full
+                                    px-3
+                                    py-1.5
+                                    text-base
+                                    font-normal
+                                    text-gray-700
+                                    bg-white bg-clip-padding bg-no-repeat
+                                    border border-solid border-gray-300
+                                    rounded
+                                    transition
+                                    ease-in-out
+                                    m-0
+                                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione colocación</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="grid grid-cols-10 gap-2 items-center">
+
+                  <div class="col-span-4">
+                    <label class="text-gray-500 font-bold  text-xs">
+                      Sección
+                    </label>
+
+                    <div>
+                      <select class="form-select
+                                    block
+                                    w-full
+                                    px-3
+                                    py-1.5
+                                    text-base
+                                    font-normal
+                                    text-gray-700
+                                    bg-white bg-clip-padding bg-no-repeat
+                                    border border-solid border-gray-300
+                                    rounded
+                                    transition
+                                    ease-in-out
+                                    m-0
+                                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione sección</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-span-2">
+                    <label class="text-gray-500 font-bold text-xs">
+                      Página
+                    </label>
+
+                    <div>
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                  </div>
+
+                  <div class="col-span-4">
+                    <label class="text-gray-500 font-bold text-xs">
+                      Anun/Sec
+                    </label>
+
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+                <div>
+                  <label class="text-gray-500 font-bold  text-xs">
+                    Descuento
+                  </label>
+                  <div class="grid grid-cols-8 gap-2 items-center">
+
+                    <div class="col-span-4">
+
+                      <select class="form-select
+                                      block
+                                      w-full
+                                      px-3
+                                      py-1.5
+                                      text-base
+                                      font-normal
+                                      text-gray-700
+                                      bg-white bg-clip-padding bg-no-repeat
+                                      border border-solid border-gray-300
+                                      rounded
+                                      transition
+                                      ease-in-out
+                                      m-0
+                                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione clase</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+
+
+
+                    <div class="col-span-2">
+                      <select class="form-select
+                                      block
+                                      w-full
+                                      px-3
+                                      py-1.5
+                                      text-base
+                                      font-normal
+                                      text-gray-700
+                                      bg-white bg-clip-padding bg-no-repeat
+                                      border border-solid border-gray-300
+                                      rounded
+                                      transition
+                                      ease-in-out
+                                      m-0
+                                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione clase</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+
+
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </form>
+          </section>
+
+          <section id="select-content" class="bg-blue-200 py-4 p-4">
+            <form class="grid grid-cols-2 gap-4">
+              <!-- FORM LEFT -->
+              <div class="w-full flex flex-col">
+                <div>
+
+                  <label class="text-gray-500 font-bold  text-xs">
+                    Publicación
+                  </label>
+
+                  <div class="grid grid-cols-8 gap-2 items-center">
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                    <div class="col-span-6">
+                      <select class="form-select  
+                        block
+                        w-full
+                        px-3
+                        py-1.5
+                        text-base
+                        font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding bg-no-repeat
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione publicación</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="text-gray-500 font-bold  text-xs">
+                    Edición
+                  </label>
+
+                  <div class="grid grid-cols-8 gap-2 items-center">
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                    <div class="col-span-6">
+                      <select class="form-select  
+                          block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding bg-no-repeat
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione edición</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div>
+                  <label class="text-gray-500 font-bold  text-xs">
+                    Producto
+                  </label>
+
+                  <div class="grid grid-cols-8 gap-2 items-center">
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                    <div class="col-span-6">
+                      <select class="form-select  
+                          block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding bg-no-repeat
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione Producto </option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </div>
+                <div>
+                  <label class="text-gray-500 font-bold  text-xs">
+                    Sec. Cla.
+                  </label>
+
+                  <div class="grid grid-cols-8 gap-2 items-center">
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                    <div class="col-span-6">
+                      <select class="form-select  
+                          block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding bg-no-repeat
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione Sec. Cla. </option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+
+                <div>
+                  <label class="text-gray-500 font-bold text-xs">
+                    Título
+                  </label>
+
+                  <div class="col-span-2">
+                    <input
+                      class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                      type="text">
+                  </div>
+                </div>
+
+              </div>
+
+
+              <!-- FORM RIGTH  -->
+              <div class="w-full flex flex-col">
+
+                <div class="grid grid-cols-10 gap-2 items-center">
+
+                  <div class="col-span-4">
+                    <label class="text-gray-500 font-bold  text-xs">
+                      Tipo original
+                    </label>
+
+                    <div>
+                      <select class="form-select
+                                    block
+                                    w-full
+                                    px-3
+                                    py-1.5
+                                    text-base
+                                    font-normal
+                                    text-gray-700
+                                    bg-white bg-clip-padding bg-no-repeat
+                                    border border-solid border-gray-300
+                                    rounded
+                                    transition
+                                    ease-in-out
+                                    m-0
+                                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione tipo</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-span-4">
+                    <label class="text-gray-500 font-bold text-xs">
+                      Modelo
+                    </label>
+
+                    <div>
+                      <select class="form-select
+                      block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-700
+                      bg-white bg-clip-padding bg-no-repeat
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione modelo</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-span-2">
+                    <label class="text-gray-500 font-bold text-xs">
+                      Palabras
+                    </label>
+
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div>
+                  <label class="text-gray-500 font-bold text-xs">
+                    Texto de clasificado
+                  </label>
+                  <textarea class="
+                    form-control
+                    block
+                    w-full
+                    h-24
+                    px-4
+                    py-1.5
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    m-0
+                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                  " id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí"></textarea>
+                </div>
+
+
+
+                <div class="grid grid-cols-2 gap-2 items-center">
+
+
+
+                  <div>
+                    <label class="text-gray-500 font-bold text-xs">
+                      Tarifa actual
+                    </label>
+
+                    <div>
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="text-gray-500 font-bold text-xs">
+                      Anun/Sec
+                    </label>
+
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+                <div>
+                  <label class="text-gray-500 font-bold  text-xs">
+                    Descuento
+                  </label>
+                  <div class="grid grid-cols-8 gap-2 items-center">
+
+                    <div class="col-span-4">
+
+                      <select class="form-select
+                                      block
+                                      w-full
+                                      px-3
+                                      py-1.5
+                                      text-base
+                                      font-normal
+                                      text-gray-700
+                                      bg-white bg-clip-padding bg-no-repeat
+                                      border border-solid border-gray-300
+                                      rounded
+                                      transition
+                                      ease-in-out
+                                      m-0
+                                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione clase</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+
+
+
+                    <div class="col-span-2">
+                      <select class="form-select
+                                      block
+                                      w-full
+                                      px-3
+                                      py-1.5
+                                      text-base
+                                      font-normal
+                                      text-gray-700
+                                      bg-white bg-clip-padding bg-no-repeat
+                                      border border-solid border-gray-300
+                                      rounded
+                                      transition
+                                      ease-in-out
+                                      m-0
+                                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        aria-label="Default select example">
+                        <option selected>Seleccione clase</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+
+
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none border border-solid border-gray-300 rounded w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text">
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </form>
+          </section>
+
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="w-full overflow-y-scroll overflow-x-scroll">
+      <table class="flex flex-col w-full text-left" style="width:1200px">
+        <thead class=" w-full bg-blue-200 text-black text-gray-500 font-bold rounded">
+          <tr class="grid grid-cols-12">
+            <th class="col-span-2">Estado</th>
+            <th class="col-span-2">Fecha</th>
+            <th>Orden</th>
+            <th>Tarifa</th>
+            <th>Recargo</th>
+            <th>Descuento</th>
+            <th>Subtotal</th>
+            <th>Reparado</th>
+            <th class="col-span-2">Base imponible</th>
+          </tr>
+        </thead>
+
+        <tbody class="w-full bg-grey-light" style="height: 200px;">
+          <tr class="grid grid-cols-12">
+            <td class="pl-2 col-span-2">Publicado</td>
+            <td class="pl-2 col-span-2">7/23/2022</td>
+            <td class="pl-2">39</td>
+            <td class="pl-2">47.00</td>
+            <td class="pl-2">0.00</td>
+            <td class="pl-2">0.00</td>
+            <td class="pl-2">47.00</td>
+            <td class="pl-2">0.00</td>
+            <td class="pl-2 col-span-2">47.00</td>
+          </tr>
+
+        </tbody>
+        <tfoot class="w-full whitespace-nowrap bg-blue-200 text-black text-gray-500 font-bold rounded">
+          <tr class="grid grid-cols-12">
+            <th class="col-span-2">Original</th>
+            <th class="col-span-2">0.00</th>
+            <th>0.00</th>
+            <th>0.00</th>
+            <th>0.00</th>
+            <th>0.00</th>
+            <th>0.00</th>
+            <th>0.00</th>
+            <th class="col-span-2">0.00</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+  </main>
 </body>
+
 </html>
 
 <style>
   html {
+
     font-family: 'Lato', sans-serif;
   }
-  .dropdown:hover > .dropdown-content {
+
+  .dropdown:hover>.dropdown-content {
     display: block;
   }
 
-  li > a {
+  li>a {
     display: block;
   }
 
+  th {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 </style>
