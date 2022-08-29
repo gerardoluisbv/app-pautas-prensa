@@ -14,7 +14,7 @@
 
 <body>
 
-
+  <!-- MENU -->
   <nav class="font-semibold border-b border-inherit">
 
     <div class="flex justify-between items-center container mx-auto max-w-screen-lg px-4 py-4">
@@ -96,6 +96,7 @@
     </div>
   </nav>
 
+  
   <main class="container mx-auto max-w-screen-lg px-6">
 
     <!-- TITULO PRINCIPAL  -->
@@ -334,9 +335,32 @@
       </div>
     </div>
 
+    <div class="py-4">
+
+      <ul class="dropdown flex justify-end md:justify-evently flex-wrap">
+
+        <li class="dropdown bg-blue-100  hover:bg-blue-100 mx-1 relative group rounded">
+
+          <a class="px-4 py-2" href=""> + Agregar </a>
+          <ul
+            class="dropdown-content absolute bg-blue-100 top-10 left-0 hidden group-hover:block w-40 border-t-2 border-white rounded">
+
+            <li class="dropdown">
+              <a class="px-4 py-2 hover:bg-blue-50 rounded" href=""> Generales </a>
+            </li>
+            <li>
+              <a class="px-4 py-2 hover:bg-blue-50 rounded" href=""> Clasificados </a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
 
     <!-- TABS -->
-    <div class="flex border-inherit py-4">
+    <div class="flex border-inherit">
       <!-- FORM ORDEN -->
       <div class="flex flex-col w-full">
 
@@ -344,21 +368,22 @@
         <nav>
           <ul class="inline-flex flex-nowrap whitespace-nowrap bg-blue-50 rounded-t">
             <li id="select-tab"
-              class="border-x border-t w-full rounded-t text-center px-4 p-2 cursor-pointer hover:bg-blue-200 bg-blue-200">
+              class="border-x border-t w-full rounded-t text-center px-4 p-2 font-bold cursor-pointer hover:bg-blue-200 bg-blue-200">
               Generales </li>
 
             <li id="select-tab" class="border-b w-full rounded-t text-center px-4 p-2 cursor-pointer hover:bg-blue-200">
               Clasificados </li>
 
-        </nav>
+        </nav> <!-- END NAV TABS -->
+
 
         <!-- CONTAINER TABS SECTIONS -->
         <div class="border-x border-b rounded-b">
 
-          <section id="select-content" class="bg-blue-200 py-4 p-4 hidden">
+          <section id="select-content" class="bg-blue-200 py-4 px-4">
             <form class="grid grid-cols-2 gap-4">
               <!-- FORM LEFT -->
-              <div class="w-full flex flex-col">
+              <div class="grid">
                 <div>
 
                   <label class="text-gray-500 font-bold  text-xs">
@@ -432,9 +457,8 @@
                       </select>
                     </div>
                   </div>
-
-
                 </div>
+               
                 <div>
                   <label class="text-gray-500 font-bold  text-xs">
                     Producto
@@ -470,12 +494,9 @@
                       </select>
                     </div>
                   </div>
-
-
                 </div>
 
                 <div class="grid gap-2 items-center">
-
                   <div>
                     <label class="text-gray-500 font-bold text-xs">
                       Título
@@ -487,52 +508,44 @@
                         type="text">
                     </div>
                   </div>
+                </div>
 
-                  <div class="w-full flex flex-col">
-
-                    <div class="grid grid-cols-10 gap-2 items-end">
-
-                      <div class="col-span-3">
-                        <label class="text-gray-500 font-bold  text-xs">
-                          Medidas
-                        </label>
-                        <input
-                          class="bg-white appearance-none rounded w-full py-1.5 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
-                          type="text" value="Col. * Pulg" readonly>
-                      </div>
-                      <div class="col-span-2">
-                        <input
-                          class="bg-white appearance-none rounded  w-full py-1.5 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
-                          type="text" value="3" readonly>
-                      </div>
-                      <div class="col-span-2">
-                        <input
-                          class="bg-white appearance-none rounded  w-full py-1.5 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
-                          type="text" value="5.50" readonly>
-                      </div>
-
-                      <div class="col-span-3">
-                        <label class="text-gray-500 font-bold  text-xs">
-                          Impacto
-                        </label>
-                        <input
-                          class="bg-white appearance-none rounded  w-full py-1.5 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
-                          type="text" value="0" readonly>
-                      </div>
-
+                <div>
+                  <div class="grid grid-cols-10 gap-2 items-end ">
+                    <div class="col-span-3">
+                      <label class="text-gray-500 font-bold  text-xs">
+                        Medidas
+                      </label>
+                      <input
+                        class="bg-white appearance-none rounded w-full py-1.5 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text" value="Col. * Pulg" readonly>
+                    </div>
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none rounded  w-full py-1.5 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text" value="3" readonly>
+                    </div>
+                    <div class="col-span-2">
+                      <input
+                        class="bg-white appearance-none rounded  w-full py-1.5 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text" value="5.50" readonly>
                     </div>
 
-
+                    <div class="col-span-3">
+                      <label class="text-gray-500 font-bold  text-xs">
+                        Impacto
+                      </label>
+                      <input
+                        class="bg-white appearance-none rounded  w-full py-1.5 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                        type="text" value="0" readonly>
+                    </div>
                   </div>
-
-
-
                 </div>
-              </div>
+              </div>  <!-- END GRID FORM LEFT  -->
 
 
               <!-- FORM RIGTH  -->
-              <div class="w-full flex flex-col">
+              <div class="grid">
 
                 <div>
                   <label class="text-gray-500 font-bold text-xs">
@@ -596,7 +609,7 @@
                 <div class="grid grid-cols-2 gap-2 items-center">
 
                   <div>
-                    <label class="text-gray-500 font-bold  text-xs">
+                    <label class="text-gray-500 font-bold text-xs">
                       Color
                     </label>
 
@@ -665,7 +678,7 @@
 
                     <div>
                       <select class="form-select
-                                    block
+                                   block
                                     w-full
                                     px-3
                                     py-1.5
@@ -784,16 +797,15 @@
 
 
 
-              </div>
+              </div>   <!-- END GRID FORM RIGTH  -->
             </form>
           </section>
 
-          <section id="select-content" class="bg-blue-200 py-4 p-4">
+          <section id="select-content" class="bg-blue-200 py-4 p-4 hidden">
             <form class="grid grid-cols-2 gap-4">
               <!-- FORM LEFT -->
-              <div class="w-full flex flex-col">
+              <div class="grid">
                 <div>
-
                   <label class="text-gray-500 font-bold  text-xs">
                     Publicación
                   </label>
@@ -865,8 +877,6 @@
                       </select>
                     </div>
                   </div>
-
-
                 </div>
 
                 <div>
@@ -904,8 +914,8 @@
                       </select>
                     </div>
                   </div>
-
                 </div>
+               
                 <div>
                   <label class="text-gray-500 font-bold  text-xs">
                     Sec. Cla.
@@ -941,8 +951,6 @@
                       </select>
                     </div>
                   </div>
-
-
                 </div>
 
 
@@ -959,14 +967,13 @@
                   </div>
                 </div>
 
-              </div>
+              </div> <!-- END GRID FORM LEFT  -->
 
 
               <!-- FORM RIGTH  -->
-              <div class="w-full flex flex-col">
+              <div class="grid">
 
                 <div class="grid grid-cols-10 gap-2 items-center">
-
                   <div class="col-span-4">
                     <label class="text-gray-500 font-bold  text-xs">
                       Tipo original
@@ -1038,7 +1045,6 @@
                         type="text">
                     </div>
                   </div>
-
                 </div>
 
                 <div>
@@ -1065,12 +1071,7 @@
                   " id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí"></textarea>
                 </div>
 
-
-
                 <div class="grid grid-cols-2 gap-2 items-center">
-
-
-
                   <div>
                     <label class="text-gray-500 font-bold text-xs">
                       Tarifa actual
@@ -1094,19 +1095,14 @@
                         type="text">
                     </div>
                   </div>
-
                 </div>
 
-
-
                 <div>
-                  <label class="text-gray-500 font-bold  text-xs">
+                  <label class="text-gray-500 font-bold text-xs">
                     Descuento
                   </label>
                   <div class="grid grid-cols-8 gap-2 items-center">
-
                     <div class="col-span-4">
-
                       <select class="form-select
                                       block
                                       w-full
@@ -1129,8 +1125,6 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-
-
 
                     <div class="col-span-2">
                       <select class="form-select
@@ -1166,60 +1160,58 @@
                 </div>
 
 
-              </div>
+              </div>   <!-- END GRID FORM RIGTH  -->
             </form>
           </section>
 
+        </div>  <!-- END CONTAINER TABS SECTIONS -->
 
+      </div> <!-- END FORM ORDEN -->
 
-        </div>
+    </div> <!-- END TABS -->
 
-      </div>
-
-
-    </div>
-
-    <div class="w-full overflow-y-scroll overflow-x-scroll">
+    <!-- SEGUNDA TABLA -->
+    <div class="w-full overflow-x-scroll py-4">
       <table class="flex flex-col w-full text-left" style="width:1200px">
-        <thead class=" w-full bg-blue-200 text-black text-gray-500 font-bold rounded">
-          <tr class="grid grid-cols-12">
-            <th class="col-span-2">Estado</th>
-            <th class="col-span-2">Fecha</th>
-            <th>Orden</th>
-            <th>Tarifa</th>
-            <th>Recargo</th>
-            <th>Descuento</th>
-            <th>Subtotal</th>
-            <th>Reparado</th>
-            <th class="col-span-2">Base imponible</th>
+        <thead class=" w-full bg-blue-200 text-black text-gray-500 font-bold rounded pr-2">
+          <tr class="grid grid-cols-11">
+            <th class="pl-2 col-span-2">Estado</th>
+            <th class="text-right">Fecha</th>
+            <th class="text-right">Orden</th>
+            <th class="text-right">Tarifa</th>
+            <th class="text-right">Recargo</th>
+            <th class="text-right">Descuento</th>
+            <th class="text-right">Subtotal</th>
+            <th class="text-right">Reparado</th>
+            <th class="text-right truncate">Base imponible</th>
           </tr>
         </thead>
 
-        <tbody class="w-full bg-grey-light" style="height: 200px;">
-          <tr class="grid grid-cols-12">
+        <tbody class="overflow-y-scroll" style="height: 200px;">
+          <tr class="grid grid-cols-11 bg-blue-50">
             <td class="pl-2 col-span-2">Publicado</td>
-            <td class="pl-2 col-span-2">7/23/2022</td>
-            <td class="pl-2">39</td>
-            <td class="pl-2">47.00</td>
-            <td class="pl-2">0.00</td>
-            <td class="pl-2">0.00</td>
-            <td class="pl-2">47.00</td>
-            <td class="pl-2">0.00</td>
-            <td class="pl-2 col-span-2">47.00</td>
+            <td class="text-right">7/23/2022</td>
+            <td class="text-right">39</td>
+            <td class="text-right">47.00</td>
+            <td class="text-right">0.00</td>
+            <td class="text-right">0.00</td>
+            <td class="text-right">47.00</td>
+            <td class="text-right">0.00</td>
+            <td class="text-right">47.00</td>
           </tr>
 
         </tbody>
-        <tfoot class="w-full whitespace-nowrap bg-blue-200 text-black text-gray-500 font-bold rounded">
-          <tr class="grid grid-cols-12">
+        <tfoot class="w-full whitespace-nowrap bg-blue-200 text-black text-gray-500 font-bold rounded pr-3">
+          <tr class="grid grid-cols-11">
             <th class="col-span-2">Original</th>
-            <th class="col-span-2">0.00</th>
-            <th>0.00</th>
-            <th>0.00</th>
-            <th>0.00</th>
-            <th>0.00</th>
-            <th>0.00</th>
-            <th>0.00</th>
-            <th class="col-span-2">0.00</th>
+            <th class="text-right">0.00</th>
+            <th class="text-right">0.00</th>
+            <th class="text-right">0.00</th>
+            <th class="text-right">0.00</th>
+            <th class="text-right">0.00</th>
+            <th class="text-right">0.00</th>
+            <th class="text-right">0.00</th>
+            <th class="text-right">0.00</th>
           </tr>
         </tfoot>
       </table>
@@ -1230,12 +1222,14 @@
 
 </html>
 
+
 <style>
   html {
 
     font-family: 'Lato', sans-serif;
   }
 
+  /* Reset children DropDown */
   .dropdown:hover>.dropdown-content {
     display: block;
   }
